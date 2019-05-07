@@ -1,14 +1,14 @@
 body {
-    max-width: 480px;
+  max-width: 480px;
 }
 
 body * {
-    background-color: yellowgreen;
+  background-color: yellowgreen;
 }
 
 .container {
-    display: grid;
-    width: 100%;
+  display: grid;
+  width: 100%;
 }
 
 .desktop{
@@ -16,24 +16,26 @@ body * {
 }
 
 .nav {
-    width: 100%;
-    height: 75px;
+  width: 100%;
+  height: 75px;
 }
 
 .sub-nav {
-    width: 100%;
-    height: 150px;
+  width: 100%;
+  height: 150px;
 }
 .feature {
-    width: 100%;
-    height: 125px;
+  width: 100%;
+  height: 125px;
 }
 
 .tile {
-    width: 50%;
-    height: 250px;
+  width: 50%;
+  height: 250px;
+  float: left;
 }
 
 .footer {
-    height: 80px;
+  clear: both;
+  height: 80px;
 }

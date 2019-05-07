@@ -1,39 +1,54 @@
 body {
-    max-width: 960px;
+  min-width: 768px;
+  max-width: 960px;
 }
 
 body * {
-    background-color: slategray;
+  background-color: hotpink;
+}
+
+h3 {
+  background-color: white;
 }
 
 .container {
-    display: grid;
-    width: 100%;
+  display: grid;
+  width: 100%;
 }
  .mobile {
-     display: none;
+  display: none;
  }
 
  .tablet {
-    display:none;
+  display:none;
+ }
+
+ .content {
+   width: 100%;
  }
 
  .nav {
-     width: 20%;
-     height: 600px;
+  width: 960px;
+  height: 100px;
+ }
+ .sub-nav {
+   width: 21%;
+   height: 600px;
  }
 
  .feature {
-     width: 40%;
-     height: 200px;
+  width: 40%;
+  height: 200px;
  }
 
  .tile {
-     width: 20%;
-     height: 250px;
+  width: 20%;
+  height: 250px;
+  flex: left;
  }
 
  footer {
-     width: 80%;
-     height: 150px;
+  clear: both;
+  width: 80%;
+  height: 150px;
  }
