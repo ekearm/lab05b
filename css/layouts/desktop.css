@@ -1,20 +1,57 @@
 body {
-  min-width: 768px;
-  max-width: 960px;
+  min-width: 980px;
+  max-width: 1199px;
+  background-color: white;
 }
-
-body * {
+.a, .b, .c, .d, .e, .f, .g, .h, .i {
   background-color: hotpink;
 }
 
-h3 {
-  background-color: white;
+/*define the grid*/
+.content {
+  display: grid;
+  grid-template-columns: 200px 190px 190px 190px 190px;
+  grid-template-rows: 100PX 200PX 250PX 150PX;
 }
 
-.container {
-  display: grid;
-  width: 100%;
+/* manual grid item placement */
+.a {
+  grid-column: 1/6;
+  grid-row:  1/2;
 }
+.b {
+  grid-column: 1/2;
+  grid-row:  2/5;
+}
+.c {
+  grid-column: 2/4;
+  grid-row:  2/3;
+}
+.d {
+  grid-column: 4/6;
+  grid-row:  2/3;
+}
+.e {
+  grid-column: 2/3;
+  grid-row:  3/4;
+}
+.f {
+  grid-column: 3/4;
+  grid-row:  3/4;
+}
+.g {
+  grid-column: 4/5;
+  grid-row:  3/4;
+}
+.h {
+  grid-column: 5/6;
+  grid-row:  3/4;
+}
+.i {
+  grid-column: 2/6;
+  grid-row:  4/5;
+}
+
  .mobile {
   display: none;
  }
@@ -23,32 +60,5 @@ h3 {
   display:none;
  }
 
- .content {
-   width: 100%;
- }
-
- .nav {
-  width: 960px;
-  height: 100px;
- }
- .sub-nav {
-   width: 21%;
-   height: 600px;
- }
-
- .feature {
-  width: 40%;
-  height: 200px;
- }
-
- .tile {
-  width: 20%;
-  height: 250px;
-  flex: left;
- }
-
- footer {
-  clear: both;
-  width: 80%;
-  height: 150px;
- }
+ 
+ 

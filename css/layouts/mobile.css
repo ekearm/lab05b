@@ -1,41 +1,61 @@
 body {
-  max-width: 480px;
+  
+  max-width: 767px;
+  background-color: white;
 }
-
-body * {
+.a, .b, .c, .d, .e, .f, .g, .h, .i {
   background-color: yellowgreen;
 }
 
-.container {
+/*define the grid*/
+.content {
   display: grid;
-  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75PX 150PX 125PX 125px 250PX 250px 80px;
 }
 
-.desktop{
-    display: none;
+/* manual grid item placement */
+.a {
+  grid-column: 1/3;
+  grid-row:  1/2;
+}
+.b {
+  grid-column: 1/3;
+  grid-row:  2/3;
+}
+.c {
+  grid-column: 1/3;
+  grid-row:  3/4;
+}
+.d {
+  grid-column: 1/3;
+  grid-row:  4/5;
+}
+.e {
+  grid-column: 1/2;
+  grid-row:  5/6;
+}
+.f {
+  grid-column: 2/3;
+  grid-row:  5/6;
+}
+.g {
+  grid-column: 1/2;
+  grid-row:  6/7;
+}
+.h {
+  grid-column: 2/3;
+  grid-row:  6/7;
+}
+.i {
+  grid-column: 1/3;
+  grid-row:  7/8;
 }
 
-.nav {
-  width: 100%;
-  height: 75px;
-}
+ .tablet {
+  display: none;
+ }
 
-.sub-nav {
-  width: 100%;
-  height: 150px;
-}
-.feature {
-  width: 100%;
-  height: 125px;
-}
-
-.tile {
-  width: 50%;
-  height: 250px;
-  float: left;
-}
-
-.footer {
-  clear: both;
-  height: 80px;
-}
+ .desktop {
+  display:none;
+ }

@@ -10,7 +10,7 @@ body {
   margin: auto;
 }
 
-nav, section, article, footer, aside {
+.a, .b, .c, .d, .e, .f, .g, .h, .i {
   position: relative;
   outline: 1px solid black;
   color: black;
